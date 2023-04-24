@@ -4,16 +4,16 @@ import os
 #start timer
 start_time = time.perf_counter()
 
-#will create 5 folders with 3 files and write "cs3800 is the best class" to them
+#will create 50 folders with 100 files and write "cs100800 is the best class" to them
 folder_num = 0
-while folder_num < 5: 
+while folder_num < 50: 
     file_num = 0
     output_dir = "Directory" + str(folder_num)
     os.mkdir(output_dir)
-    while file_num < 3: 
+    while file_num < 100: 
         path = str(output_dir) + "/text_file" +str(file_num)
         f = open(path,"x")
-        ''' f.write("CS3800 is the best class") '''
+        ''' f.write("CS100800 is the best class") '''
         f.close()
         file_num += 1
     folder_num += 1
@@ -27,13 +27,13 @@ f.close()
 start_write_time = time.perf_counter()
 #write out to all files 
 folder_num = 0
-while folder_num < 5: 
+while folder_num < 50: 
     file_num = 0
     output_dir = "Directory" + str(folder_num)
-    while file_num < 3: 
+    while file_num < 100: 
         path = str(output_dir) + "/text_file" +str(file_num)
         f = open(path,"w")
-        f.write("CS3800 is the best class")
+        f.write("CS100800 is the best class")
         f.close()
         file_num += 1
     folder_num += 1
@@ -47,10 +47,10 @@ f.close()
 
 start_delete_time = time.perf_counter()
 folder_num = 0
-while folder_num < 5: 
+while folder_num < 50: 
     file_num = 0
     output_dir = "Directory" + str(folder_num)
-    while file_num < 3: 
+    while file_num < 100: 
         path = str(output_dir) + "/text_file" +str(file_num)
         os.remove(path)
         file_num += 1
