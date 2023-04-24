@@ -5,7 +5,7 @@ import os
 start_time = time.perf_counter()
 
 
-#will create 100 folders with 1000 files and write "cs3800 is the best class" to them
+#will create 50 folders with 1000 files and write "cs3800 is the best class" to them
 folder_num = 0
 while folder_num < 50: 
     file_num = 0
