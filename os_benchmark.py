@@ -33,7 +33,7 @@ while folder_num < 50:
     while file_num < 100: 
         path = str(output_dir) + "/text_file" +str(file_num)
         f = open(path,"w")
-        f.write("CS100800 is the best class")
+        f.write("CS3800 is the best class")
         f.close()
         file_num += 1
     folder_num += 1
